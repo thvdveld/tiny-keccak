@@ -25,9 +25,6 @@ debug = false   # Controls whether the compiler passes `-g`
 opt-level = 3  # Controls the --opt-level the compiler builds with
 debug = false   # Controls whether the compiler passes `-g`
 
-[workspace]
-members = ["comparison"]
-
 [badges]
 travis-ci = { repository = "debris/tiny-keccak", branch = "master"}
 

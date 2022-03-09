@@ -14,6 +14,9 @@ categories = ["cryptography", "no-std"]
 [dependencies]
 crunchy = "0.2.2"
 
+[dev-dependencies]
+criterion = "0.3"
+
 [profile.dev]
 opt-level = 3  # Controls the --opt-level the compiler builds with
 debug = false   # Controls whether the compiler passes `-g`
@@ -76,6 +79,11 @@ required-features = ["parallel_hash"]
 [[bench]]
 name = "keccak"
 required-features = ["keccak"]
+
+[[bench]]
+name = "criterion"
+required-features = ["keccak"]
+harness = false
 
 [[bench]]
 name = "kangaroo"
